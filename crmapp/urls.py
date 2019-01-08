@@ -1,10 +1,26 @@
 from django.conf.urls import patterns, include, url
 from django.contrib import admin
 
-urlpatterns = patterns('',
-    # Examples:
-    # url(r'^$', 'crmapp.views.home', name='home'),
-    # url(r'^blog/', include('blog.urls')),
+from marketing.views import HomePage
 
-    url(r'^admin/', include(admin.site.urls)),
+urlpatterns = patterns('',
+    # url(r'^admin/', include(admin.site.urls)),
+
+    # Marketing pages
+    url(r'^$', HomePage.as_view(), name='home'),
+
+    # Subscriber related URLs
+
+    # Admin URL
+
+    # Login/Logout URLs
+
+    # Account related URLs
+
+    # Contact related URLs
+
+    # Communication related URLs
+
 )
+
+
