@@ -4,4 +4,4 @@ from django.views.generic.base import TemplateView
 # Create your views here.
 
 class HomePage(TemplateView):
-    template_name = 'marketing/homme.html'
+    template_name = 'marketing/home.html'
